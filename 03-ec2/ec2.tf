@@ -12,3 +12,7 @@ resource "aws_instance" "demo" {
 }
 
 # We will create an IAM role and attach the same than providing the accesskey and secretkey
+
+output "public_ip" {
+    value = aws_instance.demo.public_ip
+}
