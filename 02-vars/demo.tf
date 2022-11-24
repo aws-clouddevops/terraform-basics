@@ -34,7 +34,7 @@ variable "datatypes" {
 # From the above list, you can see that data in list can be of any type individually
 
 output "datatypes-op" {
-    value = "Welcome to ${var.dataypes[1]} I am ${var.dataypes[4]} about learning ${var.dataypes[5]}}"
+    value = "Welcome to ${var.datatypes[1]} I am ${var.datatypes[4]} about learning ${var.datatypes[5]}}"
 }
 
 variable "types" {
