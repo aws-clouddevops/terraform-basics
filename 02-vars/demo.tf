@@ -17,6 +17,10 @@ variable "numbers" {
     default =100
 }
 
+output "numbers-op" {
+    value = var.numbers
+}
+
 variable "datatypes" {
     default = [
         "Sample" ,
@@ -27,10 +31,20 @@ variable "datatypes" {
     ]
 }
 
+# From the above list, you can see that data in list can be of any type individually
+
+output "datatypes-op" {
+    value = var.datatypes
+}
+
 variable "types" {
     default = {
         list = "Good Morning",
         number = 200,
         boolean = true
     }
+}
+
+output "tyoes" {
+    value = var.types
 }
