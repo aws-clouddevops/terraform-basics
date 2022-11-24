@@ -12,3 +12,8 @@ When we use any file other than terraform.tfvars we need to mention it as  -var-
 Arguments : Properties that we use to provision the infra
 
 Attributes : Properties that we use to print the details after the creation of the infra like private, public ip (all other details)
+
+1) Modules
+2) Datasource - 
+* Dynamically fetch the resources     already existing
+* This is used to fetch the information of the already existing resources on cloud

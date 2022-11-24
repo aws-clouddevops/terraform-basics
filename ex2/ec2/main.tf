@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "demo1" {
-    ami                     = "ami-00e87074e52e6c9f9"
+    ami                     = data.aws_ami.my_ami.id
     instance_type           = "t3.micro"
     vpc_security_group_ids = [var.sg]
 
