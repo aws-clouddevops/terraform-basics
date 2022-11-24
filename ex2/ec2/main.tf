@@ -15,10 +15,10 @@ provisioner "remote-exec" {
         host     = self.public_ip
     }
 
-    inline = {
+    inline = [
         "ansible-pull -U https://github.com/aws-clouddevops/ansible.git -e COMPONENT=shipping -e ENV=dev -e APP_VERSION=0.0.1 roboshop-pull.yml",
 
-    }
+    ]
 }
 }
 
