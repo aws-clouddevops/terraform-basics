@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "demo" {
     ami                     = "ami-00e87074e52e6c9f9"
     instance_type           = "t3.micro"
-    vpc_security_groups_ids = [aws_security_group.allow_ssh.id]
+    vpc_security_group_ids = [aws_security_group.allow_ssh.id]
 
     tags = {
         Name = "Linux-terraform"
