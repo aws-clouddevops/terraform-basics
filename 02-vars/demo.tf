@@ -49,5 +49,5 @@ variable "map" {
 }
 
 output "map" {
-    value = "Welcome to ${var.map["Class"]} and the speed is ${var.map["Duration"]} ${var.map["Speed"]} is ${var.map["boolean"]}"
+    value = "Hello ${var.map["Class"]} and the speed is ${var.map["Duration"]} ${var.map["Speed"]} is ${var.map["boolean"]}"
 }
