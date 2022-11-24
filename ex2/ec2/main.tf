@@ -16,7 +16,7 @@ provisioner "remote-exec" {
     }
 
     inline = {
-        "ansible-pull -U https://github.com/aws-clouddevops/ansible.git -e COMPONENT=shipping -e ENV=dev -e APP_VERSION=0.0.1 roboshop-pull.yml"
+        "ansible-pull -U https://github.com/aws-clouddevops/ansible.git -e COMPONENT=shipping -e ENV=dev -e APP_VERSION=0.0.1 roboshop-pull.yml",
 
     }
 }
