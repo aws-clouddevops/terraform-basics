@@ -20,7 +20,7 @@ output "public_ip" {
 
 # Creates Security group
 
-resource "aws_security_group" "allow_ssh" {
+resource "aws_security_group" "allows_ssh" {
     name            = "allows_ssh"
     description     = "Allow SSH inbound traffic"
 
