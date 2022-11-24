@@ -51,3 +51,12 @@ variable "map" {
 output "map" {
     value = "Hello ${var.map["Class"]} and the speed is ${var.map["Duration"]} ${var.map["Speed"]} is ${var.map["boolean"]}"
 }
+
+# Declaring an empty variable
+# Declare an empty variable when variables are declared in a seperate file
+
+variable "city" {}
+
+output "city" {
+    value = "City name is ${var.city}"
+}
