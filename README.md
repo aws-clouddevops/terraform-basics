@@ -15,5 +15,9 @@ Attributes : Properties that we use to print the details after the creation of t
 
 1) Modules
 2) Datasource - 
-* Dynamically fetch the resources     already existing
-* This is used to fetch the information of the already existing resources on cloud
+    * Dynamically fetch the resources     already existing
+    * This is used to fetch the information of the already existing resources on cloud
+3) Provisioners :
+    * file provisioner
+    * Local-exec provisioner
+    * remote-exec provisioner
