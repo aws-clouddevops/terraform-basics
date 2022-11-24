@@ -23,18 +23,18 @@ output "numbers-op" {
 
 variable "datatypes" {
     default = [
-        "Sample" ,
+        "My world" ,
         500 ,
         true ,
-        "AWS",
-        "Azure"
+        "passionate",
+        "Learning"
     ]
 }
 
 # From the above list, you can see that data in list can be of any type individually
 
 output "datatypes-op" {
-    value = var.datatypes
+    value = "Welcome to ${var.dataypes[1]} I am ${var.dataypes[4]} about learning ${var.dataypes[5]}}"
 }
 
 variable "types" {
@@ -45,6 +45,6 @@ variable "types" {
     }
 }
 
-output "tyoes" {
+output "types" {
     value = var.types
 }
