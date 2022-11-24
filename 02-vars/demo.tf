@@ -37,14 +37,17 @@ output "datatypes-op" {
     value = "Welcome to ${var.datatypes[0]} I am ${var.datatypes[3]} about learning ${var.datatypes[4]}}"
 }
 
-variable "types" {
+# Declaring map variable 
+
+variable "map" {
     default = {
-        list = "Good Morning",
-        number = 200,
+        Class = "Good Morning",
+        Duration = 85,
+        Speed = "Kmp per hour"
         boolean = true
     }
 }
 
-output "types" {
-    value = var.types
+output "map" {
+    value = "Welcome to ${var.map["Class"]} and the speed is ${var.map["Duration"]} ${var.map["Speed"]} is ${var.map["boolean"]}"
 }
