@@ -60,3 +60,11 @@ variable "city" {}
 output "city" {
     value = "City name is ${var.city}"
 }
+
+# Declaring an empty variable
+
+variable "State" {}
+
+output "State" {
+    value = var.State
+}

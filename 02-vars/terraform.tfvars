@@ -1,1 +1,2 @@
-city = "hyderabad"
+City = "Hyderabad"
+State = "Karnataka"
