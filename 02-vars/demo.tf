@@ -55,10 +55,10 @@ output "map" {
 # Declaring an empty variable
 # Declare an empty variable when variables are declared in a seperate file
 
-variable "city" {}
+variable "City" {}
 
-output "city" {
-    value = "City name is ${var.city}"
+output "City" {
+    value = "City name is ${var.City}"
 }
 
 # Declaring an empty variable
