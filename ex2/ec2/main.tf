@@ -13,7 +13,7 @@ resource "aws_instance" "demo1" {
     type     = "ssh"
     user     = "centos"
     password = "DevOps321"
-    host     = self.public_ip
+    host     = self.private_ip
   }
 
     inline = [
