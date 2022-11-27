@@ -21,3 +21,5 @@ Attributes : Properties that we use to print the details after the creation of t
     * file provisioner
     * Local-exec provisioner
     * remote-exec provisioner
+
+### .auto.tfvars - have very high priority and can not be over written
